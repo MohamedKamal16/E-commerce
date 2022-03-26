@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.hema.e_commerce.ui.settings.auth.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.hema.e_commerce.ui.settings.auth.signin.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.hema.e_commerce.ui.home.Home"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_home_to_typeListProductFragment2"
+            app:destination="@id/typeListProductFragment2" />
+        <action
+            android:id="@+id/action_home_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.hema.e_commerce.ui.cart.Cart"
+        android:label="cart_fragment"
+        tools:layout="@layout/cart_fragment" >
+        <action
+            android:id="@+id/action_cart_to_checkout"
+            app:destination="@id/checkout" />
+    </fragment>
+    <fragment
+        android:id="@+id/category"
+        android:name="com.hema.e_commerce.ui.category.categoryui.maincategoryui.CategoryFragment"
+        android:label="category_fragment"
+        tools:layout="@layout/category_fragment">
+        <action
+            android:id="@+id/action_category_to_typeListProductFragment2"
+            app:destination="@id/typeListProductFragment2" />
+        <action
+            android:id="@+id/action_category_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.hema.e_commerce.ui.settings.Settings"
+        android:label="profile_fragment"
+        tools:layout="@layout/settings_fragment">
+        <action
+            android:id="@+id/action_settings_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_settings_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_settings_to_wishlist"
+            app:destination="@id/wishlist" />
+        <action
+            android:id="@+id/action_settings_to_address"
+            app:destination="@id/address" />
+        <action
+            android:id="@+id/action_settings_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_Settings_to_orderFragment"
+            app:destination="@id/orderFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/typeListProductFragment2"
+        android:name="com.hema.e_commerce.ui.typelistofproduct.TypeListProductsFragment"
+        android:label="TypeListProductFragment">
+        <action
+            android:id="@+id/action_typeListProductFragment2_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishlist"
+        android:name="com.hema.e_commerce.ui.wishlist.Wishlist"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.hema.e_commerce.ui.settings.profile.editprofile.EditProfile"
+        android:label="EditProfile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/address"
+        android:name="com.hema.e_commerce.ui.settings.address.Address"
+        android:label="Address"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_address_to_editAddress"
+            app:destination="@id/editAddress" />
+        <action
+            android:id="@+id/action_address_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editAddress"
+        android:name="com.hema.e_commerce.ui.settings.address.editaddress.EditAddress"
+        android:label="EditAddress"
+        tools:layout="@layout/fragment_edit_address">
+        <action
+            android:id="@+id/action_editAddress_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <argument
+            android:name="adress"
+            app:argType="com.hema.e_commerce.model.dataclass.customer.AddressesItem" />
+        <action
+            android:id="@+id/action_editAddress_to_address"
+            app:destination="@id/address"
+            app:popUpTo="@id/editAddress" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.hema.e_commerce.ui.settings.map.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map" >
+        <argument
+            android:name="address"
+            app:argType="com.hema.e_commerce.model.dataclass.customer.AddressesItem" />
+        <action
+            android:id="@+id/action_mapFragment_to_editAddress"
+            app:destination="@id/editAddress"
+            app:popUpTo="@id/mapFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.hema.e_commerce.ui.settings.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/editProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.hema.e_commerce.ui.product.ProductFragment"
+        android:label="ProductFragment">
+        <action
+            android:id="@+id/action_productFragment_to_cart"
+            app:destination="@id/cart" />
+        <action
+            android:id="@+id/action_productFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.hema.e_commerce.ui.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    android:name="com.hema.e_commerce.ui.product.product.ProductFragment"
+    android:label="ProductFragment" />
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.hema.e_commerce.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.hema.e_commerce.ui.splash.onBoard.ViewPagerFragment"
+        android:label="ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.hema.e_commerce.ui.category.reviews.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" />
+    <fragment
+        android:id="@+id/checkout"
+        android:name="com.hema.e_commerce.ui.settings.checkout.Checkout"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <argument
+            android:name="totalPrice"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_checkout_to_selectAddress"
+            app:destination="@id/selectAddress" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.hema.e_commerce.ui.settings.address.addaddress.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address">
+        <argument
+            android:name="isDefault"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_addAddressFragment_to_address"
+            app:destination="@id/address"
+            app:popUpTo="@id/addAddressFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="addresss"
+            app:argType="com.hema.e_commerce.model.dataclass.customer.AddressesItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.hema.e_commerce.ui.order.OrderFragment"
+        android:label="OrderFragment" >
+        <action
+            android:id="@+id/action_orderFragment_to_cancelledOrderFragment"
+            app:destination="@id/cancelledOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cancelledOrderFragment"
+        android:name="com.hema.e_commerce.ui.order.CancelledOrderFragment"
+        android:label="CancelledOrderFragment" >
+        <action
+            android:id="@+id/action_cancelledOrderFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectAddress"
+        android:name="com.hema.e_commerce.ui.settings.address.selectaddress.SelectAddress"
+        android:label="SelectAddress"
+        tools:layout="@layout/fragment_select_address"/>
+
+</navigation>

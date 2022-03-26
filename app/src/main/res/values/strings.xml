@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Sleek Chic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="home">Shop</string>
+    <string name="category">Category</string>
+    <string name="cart">Cart</string>
+    <string name="featured_brands">Brands</string>
+    <string name="categories">Category</string>
+    <string name="best_selling">Best Selling</string>
+    <string name="see_all">See All</string>
+    <string name="recommended">Recommended</string>
+    <string name="total">total</string>
+    <string name="price">Price</string>
+    <string name="welcome_user">"Welcome, "</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="read_it_together">Read it together</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_message">Please Sign In To Enjoy Our Service</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="lets_do_it_now">Lets do it now</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account!?</string>
+    <string name="language">Language</string>
+    <string name="settings">SETTINGS</string>
+    <string name="my_account">MY ACCOUNT</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="addresses">Addresses</string>
+    <string name="checkout">Checkout</string>
+    <string name="set_location">Set location</string>
+    <string name="save_information">Save Information</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="location_information">LOCATION INFORMATION</string>
+    <string name="your_name">YOUR NAME</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="empty">empty</string>
+    <string name="address">Address</string>
+    <string name="edit">Edit</string>
+    <string name="setting">Setting</string>
+    <string name="address_information">Address Information</string>
+    <string name="profile">Profile</string>
+    <string name="register_now_to_enjoy_shopping">Register now to enjoy shopping !</string>
+    <string name="e_commerce" translatable="false">E-Commerce</string>
+    <string name="payment">Payment</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="orders">Orders</string>
+    <string name="reviews">Reviews ></string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="description">Description</string>
+    <string name="eg">EG</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="exit">Exit</string>
+    <string name="check_internet">Please check the Internet to proceed further</string>
+    <string name="connect">Connect</string>
+    <string name="connection_failed">Connection Failed</string>
+    <string name="location">Location</string>
+    <string name="gpsOff">Your GPS is turned off, please turn it on </string>
+    <string name="No">No</string>
+    <string name="ok">Ok</string>
+    <string name="offline">You\'re offline, please check your internet connection to be able to choose a location</string>
+    <string name="us">$</string>
+    <string name="eur">EUR</string>
+    <string name="ayareview">good product</string>
+    <string name="doaareview">expensive</string>
+    <string name="mohammedreview">So bad</string>
+    <string name="ibrahimreview">Why don\'t you reply?</string>
+    <string name="fayzareview">beautiful</string>
+    <string name="ayahreview"> Can I pay with Paypal?</string>
+    <string name="enasreview">The product is more beautiful than the picture</string>
+    <string name="user_name">USER NAME</string>
+    <string name="email_">EMAIL</string>
+    <string name="security_information">SECURITY INFORMATION</string>
+    <string name="change_password">change password</string>
+    <string name="cancelled_orders">Cancelled Orders</string>
+    <string name="emptylist">Products Not Available Now</string>
+
+    <!-- favorite -->
+    <string name="caution">Caution</string>
+    <string name="alertDeleteMessage">Do You Want To Delete This Product From Favorite</string>
+    <string name="alertActiveMessage2">Do You Want To Cancel This Order</string>
+    <string name="alertActiveMessage">Do You Want To Active This Order</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <string name="chooselanguage">Choose Language</string>
+    <string name="home_page">Home Page</string>
+    <string name="kid" translatable="false">KID</string>
+    <string name="men" translatable="false">MEN</string>
+    <string name="sale" translatable="false">SALE</string>
+    <string name="woman" translatable="false">WOMEN</string>
+    <string name="tshirt" translatable="false">T-SHIRTS</string>
+    <string name="shoes" translatable="false">SHOES</string>
+    <string name="accessories" translatable="false">ACCESSORIES</string>
+    <string name="loading">Loading...!!</string>
+
+    <string name="me">Me</string>
+    <string name="currency">Currency</string>
+    <string name="apply">Apply</string>
+    <string name="free">Free</string>
+    <string name="pay_with_cash">Pay With Cash</string>
+    <string name="pay_with_paypal">Pay With Paypal</string>
+    <string name="order">Order</string>
+    <string name="shipping_fee">Shipping Fee</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="order_summary">ORDER SUMMARY</string>
+    <string name="payment_method">PAYMENT METHOD</string>
+    <string name="signout">Sign out</string>
+    <string name="do_you_want_sign_out">Do you Want Sign out</string>
+    <string name="successfully">Successfully</string>
+    <string name="cancel">Cancel</string>
+    <string name="canceled">Canceled</string>
+    <string name="lets_go">Let\'s go</string>
+    <string name="operation_done">Operation done</string>
+    <string name="select_way_to_pay">Select way to pay</string>
+    <string name="do_you_want_confirm_your_order">Do you Want Confirm Your Order</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="order_oanceled">Order Canceled</string>
+    <string name="add_address">Add Address</string>
+    <string name="alertdelteMessage">Do you want delete order?</string>
+    <string name="product_details">Product Details</string>
+    <string name="shopping_bag">Shopping Bag</string>
+    <string name="select">Select</string>
+    <string name="address_line">Address Line</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="addToFavorite">Added TO Favourite</string>
+
+
+    <!-- filter -->
+    <string-array name="filterArr">
+        <item>Filter</item>
+        <item>ByName</item>
+        <item>price: Low to High</item>
+        <item>price: High to Low</item>
+    </string-array>
+    <!-- filter -->
+    <string-array name="sortArr">
+        <item>Price</item>
+        <item>price 0 to 150</item>
+        <item>price 0 to 200</item>
+        <item>price 0 to 500</item>
+        <item>price 0 to 500</item>
+        <item>All prices</item>
+    </string-array>
+
+
+</resources>
